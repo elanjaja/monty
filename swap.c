@@ -16,7 +16,7 @@ void swap(stack_t **stack, unsigned int line_count)
 	/* Check if there are at least two elements on the stack */
 	if (file_data->head == NULL || file_data->head->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't perform swap, stack too short\n", line_count);
+		fprintf(stderr, "L%d: can't swap, stack too short\n", line_count);
 		close_file();
 		free_tokens();
 		free_file_data();
