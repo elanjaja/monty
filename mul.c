@@ -19,7 +19,7 @@ void multiply(stack_t **stack, unsigned int line_count)
 	/*Check if the stack is too short to perform multiplication */
 	if (temp == NULL || count_stack(file_data->head) < 2)
 	{
-		fprintf(stderr, "L%d: can't multiply, stack too short\n", line_count);
+		fprintf(stderr, "L%d: can't mul, stack too short\n", line_count);
 		free_file_data();
 		exit(EXIT_FAILURE);
 	}
