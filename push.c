@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * push - prints all the values on the stack
+ * push - prints all the values on the stack, starting
+ * from the top of the stack
  * @stack: a pointer to the stack struct
  * @line_count: the line count of each line in the file
  */
