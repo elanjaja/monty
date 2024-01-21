@@ -14,7 +14,7 @@ void pop(stack_t **stack, unsigned int line_count)
 	temp = file_data->head;
 	if (temp == NULL)
 	{
-		fprintf(stderr, "L%d: cannot pop from an empty stack\n", line_count);
+		fprintf(stderr, "L%d: can't pop from an empty stack\n", line_count);
 		close_file();
 		free_tokens();
 		free_file_data();
