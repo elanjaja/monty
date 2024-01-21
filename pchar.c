@@ -18,7 +18,7 @@ void pchar(stack_t **stack, unsigned int line_count)
 	temp = file_data->head;
 	if (temp == NULL)
 	{
-		fprintf(stderr, "L%d: cannot pchar, stack empty\n", line_count);
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", line_count);
 		free_file_data();
 		exit(EXIT_FAILURE);
 	}
@@ -28,7 +28,7 @@ void pchar(stack_t **stack, unsigned int line_count)
 	else
 	{
 		/* Print an error message and exit if the value is out of range */
-		fprintf(stderr, "L%d: cannot pchar, value out of range\n", line_count);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", line_count);
 		free_file_data();
 		exit(EXIT_FAILURE);
 	}
