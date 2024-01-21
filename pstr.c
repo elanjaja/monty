@@ -11,13 +11,11 @@ void pstr(stack_t **stack, unsigned int line_count)
 {
 	stack_t *temp;
 	int count;
-
 	(void) *stack;
 	(void) line_count;
 
 	temp = file_data->head;
 	count = 0;
-
 	if (temp == NULL)
 	{
 		printf("\n");
